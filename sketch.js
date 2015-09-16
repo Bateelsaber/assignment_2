@@ -3,6 +3,7 @@ var ballerina1;
 
 function setup() {
 	// create a place to draw
+
 	createCanvas(640, 460);
   ballerina = loadImage("imagecopy.png");
 	ballerina1 = loadImage("baimage.png")
@@ -24,7 +25,6 @@ function draw() {
 		fill(55, 38, 97);
 		quad(0, 280, 280, 280, 30, 610, -50, 676);
 
-
 	} else {
 		// blue background
 		background(59, 55, 111);
@@ -43,7 +43,16 @@ function draw() {
 		fill(250);
 		var dots;
 		dots = random(1, 3);
+			noLoop();
 
+		ellipse(random(0, 640), random(0, 278), dots, dots);
+		ellipse(random(0, 640), random(0, 278), dots, dots);
+		ellipse(random(0, 640), random(0, 278), dots, dots);
+		ellipse(random(0, 640), random(0, 278), dots, dots);
+		ellipse(random(0, 640), random(0, 278), dots, dots);
+		ellipse(random(0, 640), random(0, 278), dots, dots);
+		ellipse(random(0, 640), random(0, 278), dots, dots);
+		ellipse(random(0, 640), random(0, 278), dots, dots);
 		ellipse(random(0, 640), random(0, 278), dots, dots);
 		ellipse(random(0, 640), random(0, 278), dots, dots);
 		ellipse(random(0, 640), random(0, 278), dots, dots);
@@ -63,15 +72,14 @@ function draw() {
 		ellipse(random(0, 640), random(0, 278), dots, dots);
 		ellipse(random(0, 640), random(0, 278), dots, dots);
 	}
-	noLoop();
-		var dancer = random(1);
-		var x;
-		x = random(150, 220);
-		if (dancer < 0.5) {
+
+var x = random(30,290);
+var dancer = random(1);
+// insert image
+if (dancer < 0.5)  {
 				image(ballerina, x, 20);
 		} else {
 				image(ballerina1, x, 0);
 		}
-
 
 }
