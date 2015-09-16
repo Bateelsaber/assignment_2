@@ -7,7 +7,7 @@ function setup() {
   ballerina = loadImage("imagecopy.png");
 	ballerina1 = loadImage("baimage.png")
 	noStroke();
-		noLoop();
+
 
 }
 
@@ -63,6 +63,15 @@ function draw() {
 		ellipse(random(0, 640), random(0, 278), dots, dots);
 		ellipse(random(0, 640), random(0, 278), dots, dots);
 	}
+	noLoop();
+		var dancer = random(1);
+		var x;
+		x = random(150, 220);
+		if (dancer < 0.5) {
+				image(ballerina, x, 20);
+		} else {
+				image(ballerina1, x, 0);
+		}
 
 
 }
