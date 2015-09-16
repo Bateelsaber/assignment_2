@@ -73,10 +73,9 @@ function draw() {
 		ellipse(random(0, 640), random(0, 278), dots, dots);
 	}
 
-var x = random(30,290);
-var dancer = random(1);
+var x = random( 30, 290);
 // insert image
-if (dancer < 0.5)  {
+if (wallfloor < 0.5)  {
 				image(ballerina, x, 20);
 		} else {
 				image(ballerina1, x, 0);
