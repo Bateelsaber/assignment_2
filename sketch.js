@@ -38,7 +38,7 @@ function draw() {
 
 	}
 
-
+// add white dots that changes place and size every time the program is run
 	if (wallfloor > 0) {
 		fill(250);
 		var dots;
@@ -74,7 +74,7 @@ function draw() {
 	}
 
 var x = random( 30, 290);
-// insert image
+// insert 2 images that change when the program is run
 if (wallfloor < 0.5)  {
 				image(ballerina, x, 20);
 		} else {
