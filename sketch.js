@@ -5,7 +5,7 @@ function setup() {
 	// create a place to draw
 
 	createCanvas(640, 460);
-  ballerina = loadImage("imagecopy.png");
+	ballerina = loadImage("imagecopy.png");
 	ballerina1 = loadImage("baimage.png")
 	noStroke();
 
@@ -38,12 +38,12 @@ function draw() {
 
 	}
 
-// add white dots that changes place and size every time the program is run
+	// add white dots that changes place and size every time the program is run
 	if (wallfloor > 0) {
 		fill(250);
 		var dots;
 		dots = random(1, 3);
-			noLoop();
+		noLoop();
 
 		ellipse(random(0, 640), random(0, 278), dots, dots);
 		ellipse(random(0, 640), random(0, 278), dots, dots);
@@ -73,12 +73,13 @@ function draw() {
 		ellipse(random(0, 640), random(0, 278), dots, dots);
 	}
 
-var x = random( 30, 290);
-// insert 2 images that change when the program is run
-if (wallfloor < 0.5)  {
-				image(ballerina, x, 20);
-		} else {
-				image(ballerina1, x, 0);
-		}
+
+	var x = random(30, 290);
+	// insert 2 images that change when the program is run
+	if (wallfloor < 0.5) {
+		image(ballerina, x, 20);
+	} else {
+		image(ballerina1, x, 0);
+	}
 
 }
